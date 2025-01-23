@@ -1,2 +1,2 @@
 # GithubTest
-Start Up
+Starting to Learn Github from Scratch.
