@@ -1,2 +1,2 @@
-# GithubTest
-Starting to Learn Github from Scratch.
+# Starting to Learn Programming skills
+Starting to Learn Github, Programming and Web Developing from Scratch.
