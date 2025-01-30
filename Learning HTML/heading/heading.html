@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Heading Practice</title>
+  <style>
+    .header {
+      background: linear-gradient(to right, rgb(52, 1, 117),rgb(122, 58, 207), rgb(41, 102, 233)); /* Gradient background */
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100px;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      font-weight: bold;
+      color: white;
+      font-family: sans-serif;
+      padding: 10px;
+    }
+    
+
+    /* Prevent content from being hidden behind fixed header */
+    body {
+      padding-top: 110px;
+      margin: 0;
+    }
+
+    .navbar {
+      background: linear-gradient(to right, rgb(109, 92, 61), rgb(0, 0, 0));
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      color: white;
+    }
+    .menu {
+      font-size: 18px;
+      margin: 0;
+      margin-left: 12px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      margin-left: 100px;
+      margin-right: 150px;
+    }
+    .navbar li {
+      margin-right: 20px;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .profile {
+      margin-left: 150px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .profile img {
+      width: 40px;
+      height: 40px;
+      border: 2px white;
+      border-radius: 50%;
+    }
+
+    .profile span {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .profile span:hover, 
+    .menu:hover,
+    .navbar a:hover {
+      color: #ffcc00;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    Cascading Style Sheet
+  </div>
+
+
+  <nav class="navbar">
+    <div class="menu">☰ Menu</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Overview</a></li>
+      <li><a href="#">Functions</a></li>
+      <li><a href="#">About us</a></li>
+    </ul>
+    <div class="profile"> 
+      <span>Danyxtu</span>
+      <img src="profile.pic">
+    </div>
+  </nav>
+</body>
+</html>
