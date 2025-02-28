@@ -1,0 +1,232 @@
+*,*::before,*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins";  
+}
+body{
+  background: url("backgroundimg.jpg") no-repeat center/cover;
+  height: 100vh;
+  padding-top: 70px;
+  min-height: 180vh;
+}
+header{
+  position: fixed;
+  display: flex;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  background: rgba(255, 255, 255, 0.3);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  z-index: 100;
+}
+.header-hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.header-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+.mid-nav ul{
+  display: flex;
+  flex-direction: row;
+}
+.mid-nav ul li{
+  display: inline-block;
+  padding: 2px 20px;
+  margin: 0 10px;
+  border: 2px solid wheat;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in;
+}
+.mid-nav ul li:hover{
+  background-color: wheat;
+
+}
+.mid-nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+.mid-nav ul li a:hover{
+  color: black;
+}
+.mid-nav ul li::after{
+  background-color: wheat;
+}
+.mid-nav ul li a:focus{
+  color: black;
+}
+.right-nav{
+  height: 50px;
+  padding: 5px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.right-nav .login-Form{
+  border: none;
+  outline: none;
+  background-color: wheat;
+  height: 40px;
+  width: 70px;
+  margin-right: 10px ;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.25s ease-in-out;
+}
+.right-nav .signUp-Form{
+  border: none;
+  outline: none;
+  background-color: rgb(243, 168, 31);
+  height: 40px;
+  width: 70px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.25s ease-in-out;
+}
+.right-nav .login-Form:hover{
+  color: white;
+  background-color: transparent;
+  border: 2px solid wheat;
+}
+.right-nav .signUp-Form:hover{
+  color: white;
+  background-color: transparent;
+  border: 2px solid rgb(243, 168, 31);
+}
+main{
+  width: 100%;
+  min-height: calc(100vh - 120px);
+}
+main .home-container{
+  width: 95%;
+  margin: 0 auto;
+}
+main .home-container .home-title{
+  display: inline-block;
+  background: transparent;
+  backdrop-filter: blur(3px);
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.home-title h1{
+  color: rgb(247, 234, 211);
+}
+.home-content{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.home-content-description{
+  background: transparent;
+  background: rgba(255, 255, 255, 0.3);
+  height: 70vh;
+  padding: 15px 20px;
+  color: white;
+  border-radius: 7px;
+  font-size: 1rem;
+}
+.home-content-panel{
+  background: transparent;
+  background: rgba(255, 255, 255, 0.3);
+  height: 115vh;
+  padding: 15px 20px;
+  color: white;
+  border-radius: 7px;
+  font-size: 1rem;
+}
+.home-content-column{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.home-content-rows{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.home-content-description2{
+  background: transparent;
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.3);
+  width: 75vh;
+  height: 42vh;
+  color: white;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  border-radius: 7px;
+}
+.home-content-bottom{
+  background: transparent;
+  background: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  margin-top: 20px;
+  height: 20vh;
+  border-radius: 7px;
+}
+.home-content-bottom{
+  display: inline-block;
+
+}
+footer{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  padding-right: 20px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2),rgb(250, 242, 227)) ;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transform: translateY(100%);
+  opacity: 0;
+  border-top: 1px solid wheat;
+}
+.form-container{
+  width: 40%;
+  height: 90vh;
+  float: right;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 30px;
+  margin-top: 20px;
+  padding: 12px;
+  border: 2px solid wheat;
+  border-radius: 15px;
+  background: transparent;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+}
+.form-container form{
+  width: 80%;
+}
+.form-title{
+  margin: 15px;
+}
+.input-group{
+  margin: 15px;
+}
+.input-group label{
+  width: 100%;
+}
+.input-group label input{
+  width: 100%;
+  height: 30px;
+}
+
+
+
+
+.footer-visible{
+  transform: translateY(0);
+  opacity: 1;
+}
