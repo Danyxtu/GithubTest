@@ -28,4 +28,3 @@ window.addEventListener("scroll", () => {
     footer.classList.remove("footer-visible");
   }
 });
-
