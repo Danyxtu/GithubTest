@@ -28,3 +28,19 @@ window.addEventListener("scroll", () => {
     footer.classList.remove("footer-visible");
   }
 });
+function showSidebar(){
+  const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+  }
+function hideSidebar(){
+  const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+}
+document.addEventListener("click", function (event) {
+  const sidebar = document.querySelector(".sidebar");
+  const menuIcon = document.querySelector(".sidebar-menu");
+  
+  if (!sidebar.contains(event.target) && !menuIcon.contains(event.target)) {
+    sidebar.style.display = "none";
+  }
+});
