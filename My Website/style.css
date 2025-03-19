@@ -13,10 +13,11 @@ html{
   --border-radius: 7px;
 }
 body{
-  background: url("background.jpg") no-repeat center/cover;
+  background: url("images/background.jpg") no-repeat center/cover;
   height: auto;
   min-height: 100vh;
   padding-top: 70px;
+  padding-bottom: 60px;
 }
 /* Header Styling*/
 header{
@@ -159,7 +160,8 @@ header{
 }
 .sidebar li{
   width: 100%;
-  padding: 15px;
+  height: auto;
+  padding: 0px;
   border-radius: 2px;
   transition: background-color 0.4s, color 0.4s;
 }
@@ -173,12 +175,15 @@ header{
   padding-top: 10px;
   padding-left: 10px;
 }
-.sidebar a{
+.sidebar ul li a{
+  display: block;
+  height: 50px;
   width: 100%;
   text-decoration: none;
   font-size: 1.6rem;
   color: white;
   font-weight: 600;
+  padding: 15px;
 }
 
 /* Middle part of the Website Styling*/
@@ -205,9 +210,18 @@ main .home-container .home-title{
   text-align: center;
   align-self: center;
 }
+.name{
+  text-decoration: none;
+  color: rgb(247, 234, 211);
+  transition: color 0.13s;
+}
+.name:hover{
+  color: rgb(233, 190, 112);
+}
 .home-content{
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
   gap: 20px;
 }
 .home-content-column,
@@ -240,13 +254,15 @@ main .home-container .home-title{
   height: auto;
 }
 .home-content-panel{
-  height: 115vh;
+  height: auto;
+  flex-grow: 1;
 }
 .home-content-description2{
   backdrop-filter: blur(5px);
   max-width: 100%;
-  height: 42vh;
+  height: auto;
   font-size: 1.7rem;
+  overflow: hidden;
 }
 .home-content-bottom{
   width: 100%;
@@ -261,7 +277,7 @@ footer{
   align-items: center;
   justify-content: flex-end;
   bottom: 0;
-  height: 60px;
+  height: 40px;
   width: 100%;
   padding-right: 20px;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2),rgb(250, 242, 227)) ;
@@ -377,6 +393,9 @@ hr {
   }
   .left-nav span{
     display: inline-block;
+  }
+  html{
+    font-size: 8px;
   }
 }
 @media (max-width: 600px){
