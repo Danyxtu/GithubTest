@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background: linear-gradient(to right, #6aacf8, #B2A5FF, #DAD2FF, #FFF2AF);
+}
+.container{
+  background-color: #e8e7ee;
+  width: 450px;
+  padding: 1.5rem;
+  margin: 100px auto;
+  border-radius: .7rem;
+  box-shadow: 0 10px 30px rgba(12, 12, 24, 0.644);
+}
+form{
+  margin: 0 1.5rem;
+}
+.form-title{
+  color: #252424;
+  text-align: center;
+  padding-bottom: .9rem;
+  margin-bottom: 1rem;
+  border-bottom:1px solid #999797 ;
+}
+input{
+  color:inherit;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #757575;
+  background-color: transparent;
+  padding-left: 1rem;
+  font-size: 15px;
+  transition: border 0.16s linear;
+}
+.input-group{
+  padding: 3% 0;
+  position: relative;
+}
+.input-group i{
+  position: absolute;
+  color: black;
+}
+input:focus{
+  outline: transparent;
+  border-bottom: 2px solid hsl(251, 100%, 3%);
+}
+
+label{
+  position: relative;
+  left: 1.2rem;
+}
+.recover{
+  text-align: right;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.recover a{
+  color: #6aacf8;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.16s linear;
+}
+.recover a:hover{
+  color: #2282f0;
+  text-decoration: underline;
+}
+.recover a:focus{
+  opacity: 0.7;
+}
+
+.btn{
+  display: block;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  padding: 10px;
+  border: none;
+  width: 80%;
+  background-color: #277ddf;
+  border-radius: 6px;
+  color: #DAD2FF;
+  box-shadow: 0 2px 10px#252424;
+  margin-top: 1rem;
+}
+.btn:focus{
+  opacity: 0.7;
+}
+.links{
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  justify-content: center;
+  font-weight: bold;
+  text-align: center;
+}
+button{
+  border: none;
+  color: #6aacf8;
+  font-size: 1rem;
+  background-color: transparent;
+  font-weight: bold;
+  padding-left: 5%;
+}
+button:hover{
+  color: #2282f0;
+  text-decoration: underline;
+}
+button:focus{
+  opacity: 0.7;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Logout & Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container" id="signIn">
+      <form action="">
+        <h1 class="form-title">Login</h1>
+        <div class="input-group">
+        <i class="fas fa-user"></i>
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username" placeholder="Username" required>
+        </div>
+        
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <label for="password">Password: </label>
+          <input type="password" name="password" id="password" placeholder="Password" required>
+        </div>
+
+        <p class="recover">
+          <a href="#">Recover Password?</a>
+        </p>
+        <input type="submit" class="btn" value="Login" name="signIn">
+      </form>
+      <div class="links">
+        <p>
+          Don't have an account yet?
+        </p>
+        <button id="register-btn">Register here.</button>
+      </div>
+    </div>
+    <div class="container" id="register" style="display: none;">
+      <form action="">
+        <h1 class="form-title">Register</h1>
+        <div class="input-group">
+        <i class="fas fa-user"></i>
+        <label for="fName">First name: </label>
+        <input type="text" name="fName" id="fName" placeholder="e.g. Danny" required>
+        </div>
+        
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <label for="lName">Last name: </label>
+          <input type="text" name="lName" id="lName" placeholder="e.g. Dinglasa" required>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <label for="username">Username: </label>
+          <input type="text" name="username" id="username" placeholder="Username" required>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <label for="password">Password: </label>
+          <input type="password" name="password" id="password" placeholder="Password" required>
+        </div>
+        <input type="submit" class="btn" value="Register" name="signUp">
+        <div class="links">
+          <p>
+            Have an account Already
+          </p>
+          <button id="signIn-btn">Sign In.</button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js">
+    </script>
+  </body>
+</html>

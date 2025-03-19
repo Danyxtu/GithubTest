@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  background-image: linear-gradient(rgb(0,0,0,0.7),(0,0,0,0.7)), url(Background.jpg);
+  background-position: cover;
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 12.5%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.navbar a{
+  position: relative;
+  font-size: 16px;
+  color: #e4e4e4;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 30px;
+}
+.navbar a::after{
+  content: '' ;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: #e4e4e4;
+  border-radius: 5px;
+  /*transform: translateY(10px);*/
+  opacity: 0;
+  transition: .5s ;
+}
+.navbar a:hover::after{
+  transform: translateY(0);
+  opacity: 1;
+  width: 100%;
+}
+.searchbar{
+  width: 250px;
+  height: 45px;
+  background: transparent;
+  border: 2px solid #e4e4e4;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.searchbar input{
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #e4e4e4;
+  padding-left: 10px;
+}
+.searchbar input::placeholder{
+  color: #e4e4e4;
+}
+.searchbar button{
+  width: 40px;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchbar button i{
+  font-size: 22px;
+  color: #e4e4e4;
+}
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 500px;
+  background: url(Background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.container .content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 58%;
+  height: 100%;
+  background: yellowgreen;
+  padding: 80px;
+  color: #e4e4e4;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.content .logo{
+  font-size: 30px;
+}
+.text-sci h2{
+  font-size: 40px;
+  line-height: 1;
+}
+.text-sci h2 span{
+  font-size: 25px;
+}
+.text-sci p{
+  font-size: 16px;
+  margin: 20px 0;
+}
+.container .logreg-box{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 58%);
+  height: 100%;
+}
