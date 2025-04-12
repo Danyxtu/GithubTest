@@ -43,3 +43,4 @@ document.addEventListener("click", function (event) {
     sidebar.style.display = "none";
   }
 });
+

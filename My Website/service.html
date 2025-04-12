@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoDing - Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+  <link rel="stylesheet" href="style/navigation.css">
+</head>
+<body>
+  <header id="header">
+    <div class="left-nav">
+      <span onclick=showSidebar() class="material-symbols-outlined sidebar-menu">
+        menu
+      </span>
+      <h1 class="coding">CoDing</h1>
+    </div>
+    <div class="mid-nav">
+      <ul>
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="projects.html">Projects</a></li>
+        <li class="hideOnMobile"><a href="service.html">Service</a></li>
+        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+        <li class="hideOnMobile"><a href="about-me.html">About Me</a></li>
+      </ul>
+    </div>
+  </header>
+  <nav class="sidebar">
+    <a href="#"><img onclick=hideSidebar() class="sidebar-close"
+        src="images/close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" height="40" alt="X"></a>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about-me.html">About Me</a></li>
+    </ul>
+  </nav>
+
+  <script src="JavaScripts/script.js"></script>
+</body>
+</html>

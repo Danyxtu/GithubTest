@@ -72,6 +72,9 @@ body {
   cursor: pointer;
 }
 
+#prog-name:hover{
+  cursor: pointer;
+}
 
 /* Footer Styling */
 footer {
@@ -95,96 +98,51 @@ footer {
   font-size: 1.3rem;
 }
 
-/* Sign Up and Resgistration Styling*/
-.form-container {
-  width: 40%;
-  height: 90vh;
-  float: right;
-  display: none;
-  align-items: center;
-  flex-direction: column;
-  margin-right: 30px;
-  margin-top: 20px;
-  padding: 12px;
-  border: 2px solid wheat;
-  border-radius: 15px;
-  background: transparent;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(8px);
-}
-.form-container form {
-  width: 80%;
-}
-.form-title {
-  margin: 15px;
-}
-.input-group {
-  margin: 15px;
-}
-.input-group label {
-  width: 100%;
-}
-.input-group label input {
-  width: 100%;
-  height: 30px;
-}
-
-.input-name input,
-.input-security input,
-.submit-btn {
-  border: none;
-  outline: none;
-  height: 30px;
-  width: 200px;
-  padding-left: 10px;
-  margin: 5px 0;
-  border-radius: 15px;
-  font-size: 1.3rem;
-}
-.input-security input {
-  width: 300px;
-}
-.label {
-  font-size: 1.6rem;
-}
-hr {
-  border: none;
-  height: 2px;
-  background-color: #ccc;
-  margin: 20px 0;
-}
-.input-container {
-  margin-bottom: 30px;
-}
-.submit-btn {
-  font-size: 1.6rem;
-  display: block;
-  margin: 20px auto;
-  transition: background-color 0.3s, opacity 0.3s;
-}
-.submit-btn:hover {
-  background-color: rgb(233, 190, 112);
-  cursor: pointer;
-}
-.submit-btn:focus {
-  opacity: 0.7;
-}
-.form-container p {
-  color: #ccc;
-  font-size: 1.4rem;
-}
-.form-container p a {
-  text-decoration: none;
-  color: white;
-  transition: all 0.15s;
-}
-.form-container p a:hover {
-  text-decoration: underline;
-  color: wheat;
-}
 .footer-visible {
   transform: translateY(0);
   opacity: 1;
 }
 
-/* Mobile Interface*/
+.modal-overlay{
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.show-modal{
+  display: flex;
+}
+
+.login-modal{
+  max-width: 400px;
+  width: 100%;
+  height: 100%;
+  max-height: 200px;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 10px;
+ 
+}
+.alert,
+.alert img{
+  color: red;
+  animation: blink-animation 1s infinite;
+  font-size: 5rem;
+}
+@keyframes blink-animation {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}

@@ -17,6 +17,7 @@ body{
   min-height: 100vh;
   padding-top: 70px;
   padding-bottom: 60px;
+  background-color: orange;
 }
 
 header{
@@ -97,46 +98,7 @@ header{
   font-weight: 600;
   font-size: 1.6rem;
 }
-.right-nav{
-  height: 100%;
-  padding: 5px 0px;
-  padding-right: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.right-nav .btn-log-container{
-  width: 100%;
-}
-.right-nav .signUp-Form,
-.right-nav .login-Form{
-  border: none;
-  outline: none;
-  height: 40px;
-  width: 70px;
-  border-radius: 12px;
-  font-weight: 600;
-  font-size: 1.6rem;
-  transition: all 0.25s ease-in-out;
-}
-.right-nav .login-Form{
-  background-color: wheat;
-  margin-right: 10px;
-}
-.right-nav .signUp-Form{
-  background-color: rgb(243, 168, 31);
-}
 
-.right-nav .login-Form:hover{
-  color: white;
-  background-color: transparent;
-  border: 2px solid wheat;
-}
-.right-nav .signUp-Form:hover{
-  color: white;
-  background-color: transparent;
-  border: 2px solid rgb(243, 168, 31);
-}
 .sidebar{
   position: fixed;
   left: 0;
