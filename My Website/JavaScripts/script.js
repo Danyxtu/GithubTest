@@ -17,10 +17,9 @@ window.addEventListener("scroll", function () {
 const footer = document.querySelector("footer");
 
 window.addEventListener("scroll", () => {
-  
   const scrollHeight = document.documentElement.scrollHeight; 
-  const scrollTop = window.scrollY || document.documentElement.scrollTop; 
-  const clientHeight = window.innerHeight; 
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  const clientHeight = window.innerHeight;
 
   if (scrollTop + clientHeight >= scrollHeight - 100) {
     footer.classList.add("footer-visible");
