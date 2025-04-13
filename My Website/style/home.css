@@ -18,7 +18,7 @@ body {
   margin: 20px auto;
   background-color: white;
   height: auto;
-  width: 80%;
+  width: 85%;
   padding: 0 20px 0;
 }
 .services h1,
@@ -38,7 +38,9 @@ body {
   align-items: center;
   overflow-x: auto;
   gap: 20px;
+  padding: 10px;
 }
+
 .service-cards,
 .project-cards{
   background-color: black;
@@ -52,7 +54,7 @@ body {
 .service-cards:hover,
 .project-cards:hover{
   background-color: gray;
-  transform: scale(1.05);
+  transform: scale(1.10);
   transition: transform 0.3s ease
 }
 .service-cards button,
@@ -71,6 +73,15 @@ body {
 .project-cards button:hover{
   cursor: pointer;
 }
+.service-container{
+  display: flex;
+  flex-direction: row;
+}
+/* .service-container button{
+  border: none;
+  height: 50px;
+  align-self: center;
+} */
 
 #prog-name:hover{
   cursor: pointer;
