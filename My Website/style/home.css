@@ -88,31 +88,6 @@ body {
 }
 
 /* Footer Styling */
-footer {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  bottom: 0;
-  height: 40px;
-  width: 100%;
-  padding-right: 20px;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.2),
-    rgb(250, 242, 227)
-  );
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  transform: translateY(100%);
-  opacity: 0;
-  border-top: 1px solid wheat;
-  font-size: 1.3rem;
-}
-
-.footer-visible {
-  transform: translateY(0);
-  opacity: 1;
-}
 
 .modal-overlay{
   position: fixed;

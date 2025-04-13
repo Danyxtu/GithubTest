@@ -1,0 +1,21 @@
+.title{
+  padding-left: 50px;
+  font-size: 4rem;
+  font-weight: 600;
+}
+.projects{
+  height: 70%;
+  min-height: 600px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+.project-cards{
+  background-color: black;
+  width: 400px;
+  height: 280px;
+  border-radius: 10px;
+}
